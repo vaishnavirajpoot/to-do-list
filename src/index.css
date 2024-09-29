@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: white;
+ 
+}
+h1{
+  padding-top: 30px;
+  color: #06172a;
+  display: flex;
+  font-family: gilroy;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 76px;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: gilroy;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: italic;
+
+}
+#login{
+height: 200px;
+margin-top: 30px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+#login form input {
+  padding: 10px 10px;
+  width: 240px;
+ 
+  border-radius: 7px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+#login form #sub{
+  background-color: #04264d;
+  color: white;  
+}
+#Another{
+  height: 100vh;
+  width: 100vw;
+  background-color:#06172a;
+}
+h3{
+  color: white;
+  font-family: gilroy;
+  padding: 20px 40px;
+  text-transform: capitalize;
+   background-color: #06172a;
+}
+#sec input {
+  margin-left: 13px;
+  width: 300px;
+  padding: 10px 14px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(229, 225, 225, 0.2); /* Add shadow effect */
+}
+#sec #create{
+  width: 100px;
+  color: #06172a;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: gilroy;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 600px) { /* Adjust max-width as needed */
+  #sec input {
+    display: block; /* Make inputs stack vertically */
+    margin: 10px auto; /* Center inputs and add gap between them */
+    width: calc(100% - 26px); /* Make inputs take full width minus padding */
+  }
+
+  #rendertask {
+    width: 100%; /* Full width on smaller screens */
+    margin: 5px 0; /* Reduce margin for mobile */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #rendertask h5, #rendertask h6 {
+    font-size: 5px;
+    /* Smaller font for tablets */
+  }
+
+  #rendertask button {
+    padding: 6px 8px; /* Smaller padding for button */
+    font-size: 9px;
+  }
+}
+
+
+#showTask{
+  height: fit-content;
+  margin-top: 30px;
+  padding: 2px;
+  width: 100vw;
+  background-color:#06172a;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: flex-start; /* Align items to the start */
+
+}
+#rendertask{
+  height: fit-content;
+  width: 100vw;
+  background-color: #1f344d;
+  color: #fff;
+  padding: 20px 13px;
+  border-radius: 2px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+#rendertask h5{
+  font-family: sans-serif;
+  font-size: 15px;
+  font-style:italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+
+#rendertask h6{
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:italic;
+}
+#rendertask button{
+  padding: 10px 12px;
+  border: none;
+  background-color: rgb(211, 86, 86);
+  color: white;
+  border-radius: 3px;
+  text-transform: capitalize;
+
+}
+
+#no-task{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  padding: 30px 40px;
+}
+
